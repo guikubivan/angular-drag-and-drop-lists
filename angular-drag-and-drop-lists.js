@@ -409,6 +409,8 @@ angular.module('dndLists', [])
             placeholder.remove();
           }
         }, 100);
+
+        attr.dndDragleave && invokeCallback(attr.dndDragleave);
       });
 
       /**
